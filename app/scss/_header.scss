@@ -1,0 +1,102 @@
+.header {
+    height: 560px;
+    background-image: url('../../images/mobile/image-header.jpg');
+    background-size: cover;
+
+    @include breakpoint-up(large) {
+        background-image: url('../../images/desktop/image-header.jpg');
+    }
+    &__nav {
+        p {
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            color: $white;
+            font-size: 20px;
+    
+            @include breakpoint-up(large) {
+                font-size: 32px;
+            }
+        }
+    
+        img {
+            cursor: pointer;
+        }
+        
+        a {
+            color: $white;
+            font-size: 20px;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+        }
+
+        &-items {
+            :not(:last-child) {
+                margin-right: 65px;
+            }
+        }
+    }
+    &__dropdown {
+        margin-top: 54px;
+
+        &-arrow {
+            width: 0;
+            height: 0;
+            border-bottom: 26px solid $white;
+            border-left: 25px solid transparent;
+            margin-left: auto;
+          }
+
+        &-links {
+            padding-top: 47px;
+            flex-direction: column;
+            align-items: center;
+            background-color: $white;
+            border: transparent;
+        }
+
+        a {
+            color: $grayishBlue2;
+            margin-bottom: 47px;
+            font-size: 18px;
+        }
+    }
+
+    &__hero {
+        margin-top: 105px;
+        color: $white;
+        text-align: center;
+        
+        h1 {
+            font-size: 48px;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.header__nav-btn {
+    background-color: $white;
+    padding: 24px 44px;
+    border-radius: $radius;
+    
+    color: black !important;
+    text-transform: uppercase;
+    
+
+}
+
+.header__nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.mBtn {
+    padding: 24px 33px;
+    background-color: $yellow;
+    border-radius: $radius;
+    color: $black !important;
+    text-transform: uppercase;
+}
+
+.tog {
+    display: none;
+}

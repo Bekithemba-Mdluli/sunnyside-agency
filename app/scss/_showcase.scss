@@ -1,0 +1,146 @@
+.showcase {
+  &__container1 {
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__container2 {
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__holder {
+    @include breakpoint-up(large) {
+      display: flex;
+    }
+  }
+
+  &__container3 {
+    background-image: url("../../images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    // @include breakpoint-up(large) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+    h2 {
+      position: absolute;
+      bottom: 120px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 46px;
+    }
+
+    p {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 1.8;
+
+      @include breakpoint-up(large) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @include breakpoint-up(large) {
+      flex: 50%;
+    }
+  }
+
+  &__container4 {
+    background-image: url("../../images/mobile/image-photography.jpg");
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    // @include breakpoint-up(large) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+    h2 {
+      position: absolute;
+      bottom: 120px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 46px;
+    }
+
+    p {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 1.8;
+    }
+    @include breakpoint-up(large) {
+      flex: 50%;
+    }
+  }
+
+  &__transform {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    @include breakpoint-up(large) {
+      height: 50%;
+      width: 50%;
+      flex: 50%;
+    }
+  }
+
+  &__brand {
+    padding-top: 80px;
+    margin-bottom: 71px;
+    h2 {
+      text-align: center;
+      font-weight: 900;
+      font-size: 30px;
+
+      @include breakpoint-up(large) {
+        font-size: 48px;
+        text-align: start;
+      }
+    }
+
+    p {
+      text-align: center;
+      color: $grayishBlue;
+      line-height: 1.6;
+
+      @include breakpoint-up(large) {
+        text-align: start;
+      }
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      color: $black;
+
+      border-bottom: $yellow;
+
+      @include breakpoint-up(large) {
+        text-align: start;
+      }
+    }
+
+    @include breakpoint-up(large) {
+      flex: 50%;
+    }
+  }
+}
